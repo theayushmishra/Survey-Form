@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2 class="heading">Customer Satisfaction Survey</h2>
+    <form class="survey-form">
+
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Ayush Mishra" name="name" required></input>
+        </div>
+
+        <div class="form-control">
+            <label for="email">Email id</label>
+            <input id="email" type="email" placeholder="abc@xyz.com" name="email" required></input>
+        </div>
+
+        <div class="form-control">
+            <label for="gender">Select Gender</label>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required name="dob"></input>
+        </div>
+
+        <div class="form-control">
+            <label for="model">Select Model</label>
+            <select id="model">
+                <option value="Model_S">Model S</option>
+                <option value="Model_3">Model 3</option>
+                <option value="Model_X">Model X</option>
+                <option value="Model_Y">Model Y</option>
+                <option value="Cyber_Truck">Cyber Truck</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label for="color">Select Color</label>
+            <select id="color">
+                <option value="Red">Red</option>
+                <option value="White">White</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label for="rating">Rating</label>
+            <input type="range" id="rating" name="rating" min="0" max="5" step="1" required></input>
+        </div>
+
+        <div class="form-control">
+            <label for="text-area">Additional Comments</label>
+            <textarea id="text-area" name="instructions" rows="5" cols="40">
+        </textarea>
+        </div>
+
+        <button type="reset" id="reset-btn" class="btn">Reset</button>
+
+        <button type="submit" id="submit-btn" class="btn">Submit</button>
+
+    </form>
+    <script src="sript.js"></script>
+</body>
+
+</html>
